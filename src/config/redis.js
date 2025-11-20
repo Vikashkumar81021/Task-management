@@ -1,10 +1,11 @@
-import redis from "redis";
+import { createClient } from "redis";
 
-const redisClient = redis.createClient({
+const redisClient = createClient({
   socket: {
     host: process.env.REDIS_HOST,
-    port: process.env.REDIS_PORT
-  }
+    port: parseInt(process.env.REDIS_PORT)
+  },
+
 });
 
 redisClient.connect()
