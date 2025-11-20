@@ -12,7 +12,7 @@ const options = {
 
     servers: [
       {
-        url: "http://localhost:8000",
+        url: "https://task-management-ilmz.onrender.com",
       },
     ],
 
@@ -28,7 +28,7 @@ const options = {
 
   
       schemas: {
-        // USER MODEL
+     
         User: {
           type: "object",
           required: ["name", "email", "password"],
