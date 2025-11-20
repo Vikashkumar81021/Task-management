@@ -68,6 +68,10 @@ docker exec -it my-redis redis-cli
 ###5️⃣ Run the Backend Server
 node --watch src/server.js
 Server will start on http://localhost:8000
+
+###5️⃣ depolye DB on mongoDB Atlas
+
+Server will start on http://localhost:8000
 ###6️⃣ API Documentation
 
 Swagger UI is available at:
