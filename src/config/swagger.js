@@ -17,9 +17,7 @@ const options = {
     ],
 
     components: {
-      // ============================
-      // SECURITY
-      // ============================
+   
       securitySchemes: {
         cookieAuth: {
           type: "apiKey",
@@ -28,9 +26,7 @@ const options = {
         },
       },
 
-      // ============================
-      // SCHEMAS (MODELS)
-      // ============================
+  
       schemas: {
         // USER MODEL
         User: {
@@ -64,7 +60,6 @@ const options = {
           },
         },
 
-        // TASK MODEL
         Task: {
           type: "object",
           required: ["title", "description"],
@@ -102,11 +97,10 @@ const options = {
       },
     },
 
-    // APPLY SECURITY GLOBALLY
     security: [{ cookieAuth: [] }],
   },
 
-  // CONTROLLER ROUTES PATH
+
   apis: ["./src/controllers/*.js"],
 };
 
