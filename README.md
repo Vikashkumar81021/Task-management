@@ -32,7 +32,7 @@ A comprehensive RESTful API for managing tasks, with user authentication, role-b
 ## Prerequisites
 
 - Node.js v18+ installed
-- MongoDB running locally or in the cloud
+- MongoDB running in the cloud
 - Docker installed (for Redis)
 - Git installed
 
@@ -52,9 +52,9 @@ PORT=8000
 MONGO_URI=<your_mongodb_connection_string>
 JWT_SECRET=<your_jwt_secret>
 NODE_ENV=development
-REDIS_HOST=127.0.0.1
+REDIS_HOST=REDIS_HOST
 REDIS_PORT=6379
-
+Mongodb already running on atlas
 ###4️⃣ Run Redis via Docker
 Pull Redis image if not already done:
 docker pull redis:latest
@@ -68,8 +68,6 @@ docker exec -it my-redis redis-cli
 ###5️⃣ Run the Backend Server
 node --watch src/server.js
 Server will start on http://localhost:8000
-
-###5️⃣ depolye DB on mongoDB Atlas
 
 Server will start on http://localhost:8000
 ###6️⃣ API Documentation
